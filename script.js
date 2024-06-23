@@ -10,7 +10,6 @@ function addText(e) {
         var text = document.getElementById("inputbox").value;
         if (text.length > 0) {
             playGoodSound();
-            
             newLine.className = "btnNew";
             newLine.innerHTML = text;
             newLine.id = "btn" + nr.toString();
