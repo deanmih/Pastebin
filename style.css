@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(120, 238, 179);
+}
+
+#body2 {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 0.2cm;
+    font-family: 'Times New Roman';
+    font-size: 250%;
+}
+
+#instr {
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+#inputbox {
+    width: 500px;
+    margin-left: 1%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#savetxtbtn {
+    margin-left: 1%;
+
+}
+
+.btnNew {
+    margin-top: 1%;
+    margin-left: 1%;
+    border: none;
+    background-color: rgb(120, 238, 179);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#body2 {
+    background-color: rgb(120, 238, 179);
+}
+
+#box {
+    margin-top: 20%;
+    font-size: 40px;         
+    color: black;              
+    background-color: rgb(120, 238, 179); 
+    padding: 10px;             
+    line-height: 1.5;          
+    text-align: center;        
+    font-family: 'Times New Roman'; 
+}
+
+#btnContainer {
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
