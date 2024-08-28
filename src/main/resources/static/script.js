@@ -3,7 +3,7 @@ let input = document.getElementById("inputbox");
 input.addEventListener('keydown', handleKeydown);
 
 async function initialize() {
-    await axios.post('/addDB');
+    await axios.post('/addTable');
 }
 
 initialize();
@@ -12,7 +12,7 @@ async function handleKeydown(event) {
     if (event.key == "Enter") {
         if (input.value != "") {
             playGoodSound();
-            await axios.post('/add', { id: btnIndex, string: input.value });
+            await axios.post('/addToTable', { id: btnIndex, string: input.value });
             createButton(input.value);
             input.value = "";
         } else {

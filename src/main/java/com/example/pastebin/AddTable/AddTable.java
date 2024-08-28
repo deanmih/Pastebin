@@ -1,4 +1,4 @@
-package com.example.pastebin.AddDatabase;
+package com.example.pastebin.AddTable;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class AddDatabase {
+public class AddTable {
     final String JDBC_URL = "jdbc:mysql://localhost:3306/pastebin";
     final String JDBC_USER = "root";
     final String JDBC_PASSWORD = "password";
-    @PostMapping("/addDB")
+    
+    @PostMapping("/addTable")
     public void createDB() {
         try {
             Connection connection = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);

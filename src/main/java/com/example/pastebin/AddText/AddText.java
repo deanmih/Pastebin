@@ -15,7 +15,7 @@ public class AddText {
     final String JDBC_USER = "root";
     final String JDBC_PASSWORD = "password";
 
-    @PostMapping("/add")
+    @PostMapping("/addToTable")
     public void addTxt(@RequestBody TextRequest request) {
         try {
             Connection connection = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
