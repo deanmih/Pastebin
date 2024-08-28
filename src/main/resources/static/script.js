@@ -9,10 +9,15 @@ async function initialize() {
 initialize();
 
 async function handleKeydown(event) {
-    if (event.key == "Enter" && input.value != "") {
-        await axios.post('/add', { id: btnIndex, string: input.value });
-        createButton(input.value);
-        input.value = "";
+    if (event.key == "Enter") {
+        if (input.value != "") {
+            playGoodSound();
+            await axios.post('/add', { id: btnIndex, string: input.value });
+            createButton(input.value);
+            input.value = "";
+        } else {
+            playErrorSound();
+        }
     }
 }
 
@@ -40,3 +45,12 @@ function newPage() {
     window.open('index2.html');
 }
 
+function playGoodSound() {
+    var audio = new Audio('/audio/good.mp3');
+    audio.play();
+}
+
+function playErrorSound() {
+    var audio = new Audio('/audio/error.mp3');
+    audio.play();
+}
